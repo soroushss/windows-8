@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+
+    <link href="style/menu.css" rel="stylesheet">
+    <link href="style/taskbar.css" rel="stylesheet">
+    <link href="style/desktop.css" rel="stylesheet">
+    <link href="style/startpage.css" rel="stylesheet">
+    <link href="style/pages.css" rel="stylesheet">
+    <link href="style/lockscreen.css" rel="stylesheet">
+    <link href="style/this pc.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <div id="desktop" class="hide">
+        <div id="deskitem" class="medium">
+            <div class="deskitems" ondblclick="thispcpop()">
+                <img src="img/desktop icns/(1).png">
+                <p>This pc</p>
+            </div>
+            <div class="deskitems">
+                <img src="img/desktop icns/(2).png">
+                <p>Whats App</p>
+            </div>
+            <div class="deskitems">
+                <img src="img/desktop icns/(3).png">
+                <p>Telegram</p>
+            </div>
+            <div class="deskitems">
+                <img src="img/desktop icns/(4).png">
+                <p>Microsoft
+                    Edge</p>
+            </div>
+            <div class="deskitems">
+                <img src="img/desktop icns/(5).png">
+                <p>Skype</p>
+            </div>
+            <div class="deskitems" ondblclick="mindgame()">
+                <img src="img/desktop icns/(12).png">
+                <p>doesnt matter</p>
+            </div>
+            <div class="deskitems">
+                <img src="img/desktop icns/(6).png">
+                <p>Vscode</p>
+            </div>
+            <div class="deskitems">
+                <img src="img/desktop icns/(7).png">
+                <p>Word</p>
+            </div>
+            <div class="deskitems">
+                <img src="img/desktop icns/(8).png">
+                <p>Excel</p>
+            </div>
+            <div class="deskitems">
+                <img src="img/desktop icns/(9).png">
+                <p>PowerPoint</p>
+            </div>
+            <div class="deskitems">
+                <img src="img/desktop icns/(10).png">
+                <p>Recycle Bin</p>
+            </div>
+            <div class="deskitems">
+                <img src="img/desktop icns/(11).png">
+                <p>Firefox</p>
+            </div>
+            <div class="deskitems">
+                <img src="img/desktop icns/(13).png">
+                <p>Google
+                    Chrome</p>
+            </div>
+        </div>
+
+
+
+        <div id="game">
+            <div id="topline" onmousedown="n_1()" onmousemove="n_2(event)" onmouseup="n_3()" onmouseout="n_4()">
+                <img src="img/thispc/close.png" ondblclick="closegame()">
+            </div>
+
+            <!-- page1 start -->
+            <div class="page" id="page1">
+                <div class="header"> جادوی ذهن </div>
+                <div class="content">
+                    <div class="ask"> عددی بین یک تا شصت انتخاب کنید </div>
+                    <div id="start"> شروع </div>
+                </div>
+            </div>
+
+            <!-- page2 -->
+            <div class="page" id="page2">
+                <div class="header"> 1 جادوی ذهن </div>
+                <div class="content">
+                    <div class="ask"> آیا عدد شما در اینجا قرار دارد؟ </div>
+                    <img src="img/1.png">
+                    <div id="yes1"> بلی </div>
+                    <div id="no1"> خیر </div>
+                </div>
+            </div>
+
+            <!-- page3 -->
+            <div class="page" id="page3">
+                <div class="header"> 2 جادوی ذهن </div>
+                <div class="content">
+                    <div class="ask"> آیا عدد شما در اینجا قرار دارد؟ </div>
+                    <img src="img/2.png">
+                    <div id="yes2"> بلی </div>
+                    <div id="no2"> خیر </div>
+                </div>
+            </div>
+
+            <!-- page4 -->
+            <div class="page" id="page4">
+                <div class="header"> جادوی ذهن 3</div>
+                <div class="content">
+                    <div class="ask"> آیا عدد شما در اینجا قرار دارد؟ </div>
+                    <img src="img/3.png">
+                    <div id="yes3"> بلی </div>
+                    <div id="no3"> خیر </div>
+                </div>
+            </div>
+
+            <!-- page5 -->
+            <div class="page" id="page5">
+                <div class="header"> جادوی ذهن 4</div>
+                <div class="content">
+                    <div class="ask"> آیا عدد شما در اینجا قرار دارد؟ </div>
+                    <img src="img/4.png">
+                    <div id="yes4"> بلی </div>
+                    <div id="no4"> خیر </div>
+                </div>
+            </div>
+
+            <!-- page6 -->
+            <div class="page" id="page6">
+                <div class="header"> جادوی ذهن 5</div>
+                <div class="content">
+                    <div class="ask"> آیا عدد شما در اینجا قرار دارد؟ </div>
+                    <img src="img/5.png">
+                    <div id="yes5"> بلی </div>
+                    <div id="no5"> خیر </div>
+                </div>
+            </div>
+
+
+            <!-- page7 -->
+            <div class="page" id="page7">
+                <div class="header"> جادوی ذهن 6</div>
+                <div class="content">
+                    <div class="ask"> آیا عدد شما در اینجا قرار دارد؟ </div>
+                    <img src="img/6.png">
+                    <div id="yes6"> بلی </div>
+                    <div id="no6"> خیر </div>
+                </div>
+            </div>
+
+            <!-- page8 -->
+            <div class="page" id="page8">
+                <div class="header"> جادوی ذهن </div>
+                <div class="content">
+                    <div class="ask" id="answer"> </div>
+                    <div id="end"> پایان </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+    <div id="thispc" class="smalll">
+        <div id="topthispc" onmousedown="p_1()" onmousemove="p_2(event)" onmouseup="p_3()" onmouseout="p_4()">
+            <img src="img/thispc/close.png" ondblclick="thispcup()">
+            <img src="img/thispc/maxi.png" onclick="maxwin()">
+            <img src="img/thispc/mini.png" ondblclick="">
+            <p id="ftitle">this PC</p>
+        </div>
+
+
+
+
+
+
+
+        <div id="pcpage">
+            <div id="header">
+                <div id="adressbar">
+                    <div class="backforward">
+                        <img src="img/thispc/backward.png" id="lastpage" onclick="lastpage()">
+                        <img src="img/thispc/forward.png">
+                    </div>
+
+                    <input type="searchbox" name="s" id="adress" value="This PC">
+                    <div class="adressItems">
+                        <img src="img/thispc/downward.png">
+                    </div>
+                    <div class="adressItems">
+                        <img src="img/thispc/refresh.png">
+                    </div>
+                    <input type="searchbox" name="s" id="search">
+                </div>
+            </div>
+
+            <div id="drives">
+
+                <input type="checkbox" name="folders" id="fol">
+                <label for="fol">
+                    <img src="img/thispc/folder/DirRight.png"> Folders(6)
+                    <div></div>
+                </label>
+                <div id="folder">
+                    <div class="fo1">
+                        <img src="img/thispc/folder/55.png">
+                        <p>3D Objects</p>
+                    </div>
+                    <div class="fo1">
+                        <img src="img/thispc/folder/56.png">
+                        <p>Desktop</p>
+                    </div>
+                    <div class="fo1">
+                        <img src="img/thispc/folder/58.png">
+                        <p>Downloads</p>
+                    </div>
+                    <div class="fo1">
+                        <img src="img/thispc/folder/59.png">
+                        <p>Music</p>
+                    </div>
+                    <div class="fo1" ondblclick="wallsele()">
+                        <img src="img/thispc/folder/60.png">
+                        <p>Picture</p>
+                    </div>
+                    <div class="fo1">
+                        <img src="img/thispc/folder/61.png">
+                        <p>Video</p>
+                    </div>
+                </div>
+
+                <input type="checkbox" name="folders" id="dri">
+                <label for="dri">
+                    <img src="img/thispc/folder/DirRight.png"> Drives(3)
+                    <div></div>
+                </label>
+                <div id="drive">
+                    <div class="fo1 d1">
+
+
+                    </div>
+                    <div class="fo1 d2">
+
+
+                    </div>
+                    <div class="fo1 d3">
+
+
+                    </div>
+
+
+                </div>
+            </div>
+
+
+            <div id="rightpcpage">
+
+
+
+
+            </div>
+            <div id="leftpcpage">
+
+
+
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <ul id="menu">
+        <li class="fill"> Power menu
+            <img class="icon" src="img/icons/1.png">
+            <ul class="smallmenu" id="menu1">
+                <li> Lock windows
+                    <img class="icon" src="img/icons/2.png">
+                </li>
+                <li> Swich user
+                    <img class="icon" src="img/icons/3.png">
+                </li>
+                <li> Sign out
+                    <img class="icon" src="img/icons/4.png">
+                </li>
+                <li> Sleep
+                    <img class="icon" src="img/icons/5.png">
+                </li>
+                <li> Hibernate
+                    <img class="icon" src="img/icons/7.png">
+                </li>
+                <li> Hybrid shutdown
+                    <img class="icon" src="img/icons/6.png">
+                </li>
+                <li> Full shutdown
+                    <img class="icon" src="img/icons/6.png">
+                </li>
+                <li> Restart
+                    <img class="icon" src="img/icons/8.png">
+                </li>
+            </ul>
+        </li>
+        <li class="fill"> View
+            <ul class="smallmenu" id="menu2">
+                <li>
+                    <input id="a" type="radio" name="sel" onclick="large()">
+                    <label for="a" onclick="large()">large icons
+                        <img class="selected" src="img/icons/12.png">
+                    </label>
+
+                </li>
+                <li>
+                    <input id="b" type="radio" name="sel" checked onclick="medium()">
+                    <label for="b" onclick="medium()">Medium icons
+                        <img class="selected" src="img/icons/12.png">
+                    </label>
+
+                </li>
+                <li class="ender">
+                    <input id="c" type="radio" name="sel" onclick="small()">
+                    <label for="c" onclick="small()">Small icons
+                        <img class="selected" src="img/icons/12.png">
+                    </label>
+                </li>
+                <li> <input id="free" type="checkbox" name="fre" onclick="freedom()"checked>
+                    <label for="free" onclick="">Auto arrange icons
+                        <img class="selected" src="img/icons/13.png">
+                    </label>
+                </li>
+                <li class="ender"> Aling icons to grid </li>
+                <li>
+                    <input id="dan" type="checkbox" name="sel" onclick="hide()" checked>
+                    <label for="dan" onclick="">Show dekstop icons
+                        <img class="selected" src="img/icons/13.png">
+                    </label>
+                </li>
+            </ul>
+        </li>
+        <li> Sort by </li>
+        <li class="ender"> Refresh </li>
+        <li> Paste </li>
+        <li> Paste shortcut </li>
+        <li class="ender"> Areo Glass GUI
+            <img class="icon" src="img/icons/9.png">
+        </li>
+
+        <li class="ender"> NVIDIA control panel
+            <img class="icon" src="img/icons/11.png">
+        </li>
+
+        <li class="ender fill"> new
+            <ul class="new" id="menu3">
+                <li> Folder
+                    <img class="icon" src="img/icons/14.png">
+                </li>
+                <li class="ender"> Shortcut
+                    <img class="icon" src="img/icons/15.jpg">
+                </li>
+                <li> Microsoft Access Database
+                    <img class="icon" src="img/icons/16.png">
+                </li>
+                <li> Bitmap image
+                    <img class="icon" src="img/icons/17.png">
+                </li>
+                <li> Contact
+                    <img class="icon" src="img/icons/18.png">
+                </li>
+                <li> Microsoft Word Document
+                    <img class="icon" src="img/icons/19.png">
+                </li>
+                <li> Edraw.Document
+                    <img class="icon" src="img/icons/20.png">
+                </li>
+                <li> Journal Document
+                    <img class="icon" src="img/icons/21.png">
+                </li>
+                <li> MQL4 Source File
+                    <img class="icon" src="img/icons/22.png">
+                </li>
+                <li> PowerPoint Presentation
+                    <img class="icon" src="img/icons/23.png">
+                </li>
+                <li> Microsoft Publisher Document
+                    <img class="icon" src="img/icons/24.png">
+                </li>
+                <li> WinRAR archive
+                    <img class="icon" src="img/icons/25.png">
+                </li>
+                <li> Text Document
+                    <img class="icon" src="img/icons/26.png">
+                </li>
+                <li> Microsoft Excel Worksheet
+                    <img class="icon" src="img/icons/27.png">
+                </li>
+                <li> WinRAR ZIP archive
+                    <img class="icon" src="img/icons/25.png">
+                </li>
+            </ul>
+        </li>
+        <li> screen resolution
+            <img class="icon" src="img/icons/10.png">
+        </li>
+
+        <li> personalize
+            <img class="icon" src="img/icons/9.png">
+        </li>
+    </ul>
+
+    <div id="taskbar">
+
+        <div id="taskcenter">
+            <div class="taskbaritems" onclick="stpg()">
+                <img src="img/taskbar/windows-logo-programming-language-19.png">
+            </div>
+            <div class="taskbaritems">
+                <img src="img/taskbar/image.png">
+            </div>
+            <div class="taskbaritems">
+                <img src="img/taskbar/about-logo.png">
+            </div>
+            <div class="taskbaritems">
+                <img src="img/taskbar/pngwing.com(9).png">
+            </div>
+            <div class="taskbaritems">
+                <img src="img/taskbar/pngwing.com(53).png">
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+        <div id="taskright">
+
+            <div id="clock" class="taskbartools" onload="currentTime()"></div>
+            <div class="taskbartools">ENG</div>
+            <div class="taskbartools">
+                <img src="img/taskbar/Untitled.png">
+            </div>
+
+            <input id="d" type="checkbox" name="sel">
+            <label for="d">
+                <img src="img/taskbar/DirRight.png">
+            </label>
+
+            <div id="lbopen"></div>
+
+        </div>
+    </div>
+
+    <div id="stbg" class="hide">
+        <div id="startpage">
+
+
+            <div id="header">
+
+                <div id="headercenter">
+                    <h2>start</h2>
+                </div>
+
+
+
+                <div id="headerright">
+
+                    <div class="hedit">
+                        <img src="img/startpage/IMG_20190527_172006_1.jpg">
+                        <h2>soroush
+                            <p>sohrabi</p>
+                        </h2>
+
+
+                    </div>
+
+                    <input type="checkbox" id="shut" class="hedit">
+                    <label for="shut" class="hedit">
+                        <img src="img/startpage/41-413813_shutdown-button-clipart-arrow-icon-logout-white-png.png">
+                    </label>
+
+
+                    <input type="checkbox" id="search" class="hedit">
+                    <label for="search" class="hedit">
+                        <img src="img/startpage/white-search-icon-png-4.png">
+                    </label>
+
+                </div>
+
+            </div>
+
+            <div id="center">
+
+                <div class="sut">
+                    <div class="cenit small">
+                        <img src="img/startpage/1.png">
+                        <p>This PC</p>
+                    </div>
+
+                    <div class="cenit small">
+                        <img src="img/startpage/2.png">
+                        <p>Google Chrome</p>
+                    </div>
+
+                    <div class="cenit small">
+                        <img src="img/startpage/3.png">
+                        <p>Fire Fox</p>
+                    </div>
+
+                    <div class="cenit small">
+                        <img src="img/startpage/4.png">
+                        <p>Microsoft Edge</p>
+                    </div>
+
+                    <div class="cenit big">
+                        <img src="img/background/pyke.jpg">
+                        <p>Photos</p>
+                    </div>
+
+                </div>
+
+                <div class="sut">
+                    <div class="cenit big">
+                        <img id="backtohell" src="img/background/normal.jpg" onclick="stdt()">
+                        <p>Desktop</p>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+
+        </div>
+    </div>
+
+    <div id="lockscreen" onclick="lock()">
+        <div id="clock2" onload="Time()"></div>
+
+    </div>
+
+
+
+    <script>
+
+
+
+        desktop.oncontextmenu = function (e) {
+
+            x = e.pageX;
+            y = e.pageY;
+
+            menu.style.display = "block";
+            menu.style.transition = "0s";
+            menu.style.opacity = "1"
+            menu.style.visibility = "visible";
+
+            menu.style.left = x + "px";
+            menu.style.top = y + "px";
+
+
+
+            if (x > 966) {
+
+                menu1.style.left = -255 + "px";
+                menu2.style.left = -255 + "px";
+                menu3.style.left = -255 + "px";
+
+
+
+            }
+
+            else {
+
+                menu1.style.left = 100 + "%";
+                menu2.style.left = 100 + "%";
+                menu3.style.left = 100 + "%";
+
+            }
+            if (y > 511) {
+
+                menu.style.top = y - 275 + "px";
+            }
+            else {
+
+                menu.style.top = y + "px";
+
+
+            }
+            if (x > 1400) {
+                menu.style.left = 1373 + "px";
+            }
+            else {
+                menu.style.left = x + "px";
+            }
+            if (y < 125) {
+
+                menu3.style.top = 0;
+            }
+            else {
+                menu3.style.top = -325 + "px";
+            }
+
+
+            return false;
+
+        }
+
+
+
+        document.onclick = function (v) {
+
+            menu.style.transition = "0.1s";
+            menu.style.opacity = "0"
+            menu.style.visibility = "hidden";
+            menu.style.display = "none";
+
+        }
+
+
+
+        /*  desktop scales  */
+
+
+
+
+        function large() {
+            deskitem.className = "large";
+
+        }
+
+        function medium() {
+            deskitem.className = "medium";
+
+        }
+
+        function small() {
+            deskitem.className = "small";
+
+        }
+
+
+
+        function hide() {
+
+            if (document.getElementById("dan").checked == false) {
+                deskitem.style.display = "none";
+            }
+            else {
+                deskitem.style.display = "block";
+            }
+
+        }
+
+        function freedom(){
+
+            if (document.getElementById("free").checked == false) {
+              deskitem.classList.add('free');
+            }
+            else {
+                deskitem.classList.remove('free');  
+            }
+ 
+        }
+
+
+        // startpage
+
+
+
+
+
+        function stpg() {
+            stbg.className = "show";
+            desktop.className = "hide";
+            taskbar.style.display = "none";
+            thispc.style.visibility = "hidden";
+        }
+
+        function stdt() {
+            stbg.className = "hide";
+            desktop.className = "show";
+            taskbar.style.display = "block";
+            thispc.style.visibility = "visible";
+        }
+
+        function lock() {
+            lockscreen.style.top = -2000 + "px";
+            lockscreen.style.visibility = "hidden";
+            desktop.className = "show";
+            taskbar.style.display = "block";
+        }
+
+        /* wallpaper seletion */
+
+        function wallsele() {
+            drives.style.display = "none";
+            rightpcpage.style.display = "block"
+
+        }
+        function lastpage() {
+            drives.style.display = "block";
+            rightpcpage.style.display = "none"
+
+        }
+        fart = 0;
+        function maxwin() {
+
+            if (fart == 0) {
+                thispc.style.top = "0";
+                thispc.style.left = "0";
+                thispc.className = "maxed";
+                fart = 1;
+
+            }
+            else {
+                thispc.className = "smalll";
+                fart = 0;
+
+            }
+
+
+
+
+
+
+        }
+
+
+
+
+
+
+    </script>
+    <script src="javascript/jquery.js"></script>
+    <script src="javascript/thispc.js"></script>
+    <script src="javascript/clock.js"></script>
+    <script src="javascript/mindgame.js"></script>
+    <script>
+
+        bgs = [{ id: 1, pic: "caitlyn.jpg", color: "rgb(222, 184, 135)", taskbar: "rgb(222, 184, 135, 0.7)" },
+        { id: 2, pic: "diana.jpg", color: "rgb(33, 173, 166)", taskbar: "rgb(33, 173, 166, 0.7)" },
+        { id: 3, pic: "kaisa.jpg", color: "rgb(153, 28, 153)", taskbar: "rgb(153, 28, 153, 0.7)" },
+        { id: 4, pic: "league-of-legends-PC-Wallpaper-4k.jpg", color: "rgb(160, 160, 160)", taskbar: "rgb(160, 160, 160, 0.7)" },
+        { id: 5, pic: "league-of-legends-project-fiora.jpg", color: "rgb(252, 36, 101)", taskbar: "rgb(252, 36, 101, 0.7)" },
+        { id: 6, pic: "normal.jpg", color: "rgba(255, 199, 59)", taskbar: "rgba(255, 199, 59, 0.7)" },
+        { id: 7, pic: "pyke.jpg", color: "rgb(222, 205, 255)", taskbar: "rgb(222, 205, 255, 0.7)" },
+        { id: 8, pic: "paris.jpg", color: "rgba(255, 199, 59)", taskbar: "rgba(255, 199, 59, 0.7)" },]
+
+        for (pc = 0; pc < bgs.length; pc++) {
+
+            it = document.createElement("div");
+            it.className = "pcitems";
+            $(it).attr({ rel: pc });
+
+            im = document.createElement("img");
+            im.src = "img/background/" + bgs[pc].pic;
+
+            p = document.createElement("p");
+            p.innerHTML = bgs[pc].pic;
+
+            it.appendChild(im);
+            it.appendChild(p);
+
+            rightpcpage.appendChild(it);
+
+
+
+
+        }
+        $("#rightpcpage").on("click", ".pcitems", function () {
+            num = $(this).attr('rel');
+
+            desktop.style.background = "url(img/background/" + bgs[num].pic + ")";
+            desktop.style.backgroundSize = "100%";
+            startpage.style.background = "url(img/background/" + bgs[num].pic + ")";
+            startpage.style.backgroundSize = "100%";
+
+            backtohell.src = "img/background/" + bgs[num].pic;
+
+
+            taskbar.style.background = bgs[num].taskbar;
+
+            topthispc.style.background = bgs[num].color;
+            thispc.style.borderColor = bgs[num].color;
+
+
+
+
+        });
+    </script>
+
+</body>
+
+</html>
